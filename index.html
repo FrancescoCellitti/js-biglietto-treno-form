@@ -11,26 +11,40 @@
 
 <body class="bg-secondary">
 
-    <div class="container bg-white d-flex justify-content-center">
-        <div class="row">
-            <div class="col-2">
+    <div class="container bg-white">
+        <div class="row text-center d-flex justify-content-around">
+            <div class="col-4 p-4">
                 <form action="">
-                    <label for="CompleteName">Nome e Cognome</label>
+                    <label for="CompleteName" class="mb-3">Nome e Cognome</label><br>
                     <input type="text" id="NomeCompleto" name="NomeCompleto">
                 </form>
             </div>
-            <div class="col-2">
-                <form action="">
-                    <label for="CompleteName">Nome e Cognome</label>
-                    <input type="text" id="NomeCompleto" name="NomeCompleto">
+            <div class="col-4 p-4">
+                <label for="CompleteName" class="mb-3">Km da percorrere</label><br>
+                <input type="number" id="NomeCompleto" name="NomeCompleto">
                 </form>
             </div>
-            <div class="col-2">
+            <div class="col-4 p-4">
+
                 <form action="">
-                    <label for="CompleteName">Nome e Cognome</label>
-                    <input type="text" id="NomeCompleto" name="NomeCompleto">
+                    <label for="CompleteName" class="mb-3">Fascia d'eta</label><br>
+                    <div class="container p-6">
+                        <select class="form-select" aria-label="Default select example pb-5">
+                            <option value="1">Minorenne</option>
+                            <option value="2">Maggiorenne</option>
+                            <option value="3">Over 65</option>
+                        </select>
+                    </div>
                 </form>
+
+
             </div>
+        </div>
+        <div class="row d-flex justify-content-center text-center py-4">
+            <div class="col-1"><button class="py-2 rounded">Genera</button></div>
+            <div class="col-1"><button class="py-2 rounded">Annulla</button></div>
+
+
         </div>
     </div>
 
