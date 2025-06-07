@@ -9,9 +9,9 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 
-<body class="bg-secondary">
+<body class="bg-success">
 
-    <div class="container bg-white">
+    <div class="container bg-white mt-4 rounded">
         <div class="row text-center align-items-center">
             <div class="col-4 p-4">
                 <form action="">
@@ -21,7 +21,7 @@
             </div>
             <div class="col-4 p-4">
                 <label for="CompleteName" class="mb-3">Km da percorrere</label><br>
-                <input type="number" id="NomeCompleto" name="NomeCompleto">
+                <input type="number" id="NumeroKm" name="NumeroKm">
                 </form>
             </div>
             <div class="col-4 p-4">
@@ -41,10 +41,35 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center text-center py-4">
-            <div class="col-1"><button class="py-2 rounded">Genera</button></div>
-            <div class="col-1"><button class="py-2 rounded">Annulla</button></div>
+            <div class="col-1"><button id="Genera" class="py-2 rounded">Genera</button></div>
+            <div class="col-1"><button id = "Annulla" class="py-2 rounded">Annulla</button></div>
 
 
+        </div>
+    </div>
+    <div class="container bg-white mt-5 rounded">
+        <h3>Info passegero</h3>
+        <div class=" mx-2 row border-top border-2">
+            <div class="col-4">
+                <h4>Nome passegero</h4>
+                <p id="Nome"></p>
+            </div>
+            <div class="col-2">
+                <h4>Offerta</h4>
+                <p id="Offerta"></p>
+            </div>
+            <div class="col-2">
+                <h4>Carrozza</h4>
+                <p id="carrozza">5</p>
+            </div>
+            <div class="col-2">
+                <h4>Codice ISP</h4>
+                <p id="codice">19192</p>
+            </div>
+            <div class="col-2">
+                <h4>Costo biglietto</h4>
+                <p id="costo"></p>
+            </div>
         </div>
     </div>
 

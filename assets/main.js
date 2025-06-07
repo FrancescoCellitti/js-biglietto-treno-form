@@ -1,11 +1,37 @@
+let Nome = document.getElementById("NomeCompleto")
+let km = document.getElementById("NumeroKm")
+let età = document.querySelector("select")
+let Genera = document.getElementById("Genera");
+let Annulla = document.getElementById("Annulla")
 
-let prezzo = km * 0.21
+let costo = document.getElementById("costo")
+let NomeBiglietto = document.getElementById('Nome')
+let Offerta = document.getElementById('Offerta')
 
-if (età < 18) {
-    prezzo *= 0.8
-} else if (età >= 65){
-    prezzo *= 0.6
-}
 
-const prezzoFinale = prezzo.toFixed(2)
-console.log(prezzoFinale)
+Genera.addEventListener('click', (e) => {
+    e.preventDefault();
+    NomeBiglietto.textContent = Nome.value
+
+
+    let prezzo = km.value * 0.21;
+    /* costo.textContent(prezzo) */
+    if (età.value == "1") {
+        prezzo *= 0.8;
+
+        Offerta.textContent = "Sconto 20%"
+    } else if (età.value == "3") {
+        prezzo *= 0.6;
+        Offerta.textContent = "Sconto 40%"
+
+    } else {
+        Offerta.textContent = "biglietto standard"
+    }
+    costo.innerText = prezzo.toFixed(2) + " €";
+})
+
+
+Annulla.addEventListener('click', () => { location.reload() })
+
+
+
